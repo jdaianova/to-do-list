@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "marckscript"; 
+    src: url("fonts/marckscript.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+body {
+    padding-top: 120px;
+    background-image: url(img/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.header, .main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family:"marckscript";
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to left, rgb(100, 224, 232), black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border: transparent;
+}
+
+.input-todo {
+    color: grey;
+    padding: 10px;
+}
+
+.input-btn {
+    color: green;
+    border: none;
+    padding: 20px;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-list-element {
+    background-image: url(img/notes.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    weight: 200px;
+    list-style-type: none;
+    padding: 100px;
+}
