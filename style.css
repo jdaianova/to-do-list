@@ -1,3 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
 @font-face {
     font-family: "marckscript"; 
     src: url("fonts/marckscript.ttf") format("truetype"); 
@@ -6,52 +15,92 @@
     } 
 
 body {
-    padding-top: 120px;
-    background-image: url(img/background2.jpg);
+    padding-top: 200px;
+    background-color: rgb(169, 240, 243);
+    background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     min-height: 100vh;
+
 }
 
-.header, .main {
+.top, .container {
     display: flex;
     justify-content: center;
 }
 
+.container {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.container-list {
+    width: 500px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 70vh;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 h1 {
+    text-align: center;
     font-family:"marckscript";
-    font-size: 60px;
+    font-size: 58px;
     font-weight: bold;
     background: linear-gradient(to left, rgb(100, 224, 232), black);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     border: transparent;
+
 }
 
 .input-todo {
-    color: grey;
+    width: 350px;
     padding: 10px;
+    border: none;
 }
 
 .input-btn {
-    color: green;
+    width: 50px;
+    background-color: transparent;
     border: none;
-    padding: 20px;
+    background-image: url(img/material-icon-gce8b6f4a6_1280.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    font-family: "sans-serif";
 }
 
 .todo-list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 60vh;
 }
 
 .todo-list-element {
-    background-image: url(img/notes.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    weight: 200px;
+    background-color: rgb(197, 230, 228);
+    width: 385px;
     list-style-type: none;
-    padding: 100px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    font-family:"marckscript";
+    font-size: 25px;
+    overflow-wrap: break-word;
+}
+
+.todo-list-element-complete {
+    background-color: rgb(47, 90, 77);
+    color: white;
+    text-decoration: line-through;
+}
+
+@media all and (max-width: 800px) and (min-width: 801px) {
+    h1 {
+        font-size: 55px;
+        line-height: 1.2em;
+    }
 }
